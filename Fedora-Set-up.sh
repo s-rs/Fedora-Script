@@ -79,7 +79,7 @@ sudo ./install.sh
 echo -e "\n# Add fastfetch and systemd-analyze\necho\nfastfetch\nsystemd-analyze\n" >> ~/.bashrc
 
 # Print completion message
-echo "Post-installation script completed."
+echo "Script has successfully been completed now the system will reboot and you can enjoy it after that hehehehe"
 
 # Reboot the system
 sudo reboot
