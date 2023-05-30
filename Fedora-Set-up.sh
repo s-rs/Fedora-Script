@@ -90,5 +90,11 @@ echo -e "\n# Add fastfetch and systemd-analyze\necho\nfastfetch\nsystemd-analyze
 echo "Script has successfully been completed now the system will reboot and you can enjoy it after that hehehehe"
 
 # Reboot the system
+echo "Rebooting the system in 10 seconds..."
+
+# Delay for 10 seconds
+sleep 10
+
+# Reboot the system
 sudo reboot
 
