@@ -82,7 +82,7 @@ echo -e "\n# Add fastfetch and systemd-analyze\necho\nfastfetch\nsystemd-analyze
 echo "Script has successfully been completed now the system will reboot and you can enjoy it after that hehehehe"
 
 # Reboot the system
-echo "Rebooting the system in 10 seconds..."
+echo "Rebooting the system in 10 seconds...Use ctrl+z to stop rebooting"
 
 # Delay for 10 seconds
 sleep 10
