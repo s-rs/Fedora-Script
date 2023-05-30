@@ -32,7 +32,7 @@ sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-r
 sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Install common packages
-sudo dnf install -y brave-browser fastfetch kdenlive gimp gedit gparted timeshift gnome-tweaks vlc android-tools okular || true
+sudo dnf install -y brave-browser fastfetch kdenlive gimp gedit gparted timeshift gnome-tweaks vlc android-tools okular gnome-shell-extensions chrome-gnome-shell || true
 
 # Get the current username
 username=$(whoami)
@@ -74,6 +74,14 @@ git clone https://github.com/vinceliuice/Layan-cursors
 # Exectue cursors installation
 cd Layan-cursors
 sudo ./install.sh 
+
+# Installing Extensions
+gnome-extensions install dash-to-dock@micxgx.gmail.com
+gnome-extensions install arcmenu@arcmenu.com
+gnome-extensions install desktop-icons-ng@matrudev.com
+gnome-extensions install blur-my-shell@rockon999.github.io
+gnome-extensions install user-themes@gnome-shell-extensions.gcampax.github.com
+gnome-extensions install compiz-alike-animations@mathematical.coffee.gmail.com
 
 # Add fastfetch and systemd-analyze to .bashrc
 echo -e "\n# Add fastfetch and systemd-analyze\necho\nfastfetch\nsystemd-analyze\n" >> ~/.bashrc
