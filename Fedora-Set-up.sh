@@ -7,7 +7,7 @@ echo "By Subhashis Barad"
 sudo chmod +x $0
 
 # Uninstall packages
-sudo dnf remove -y cheese* libreoffice* firefox gnome-boxes gnome-contacts rhythmbox gnome-maps gnome-color-manager mediawriter || true
+sudo dnf remove -y cheese* libreoffice* firefox gnome-boxes gnome-contacts gnome-maps gnome-color-manager mediawriter || true
  
 # Update the system
 sudo dnf update -y
