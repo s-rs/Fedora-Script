@@ -16,7 +16,9 @@ sudo dnf update -y
 sudo dnf config-manager --setopt=max_parallel_downloads=10 --save
 
 # Set primary mirror
-sudo dnf config-manager --setopt=baseurl=https://admin.fedoraproject.org/mirrormanager/mirrors/Fedora/38/x86_64 --save
+sudo dnf config-manager --setopt=<repository-id>.baseurl=https://admin.fedoraproject.org/mirrormanager/mirrors/Fedora/38/x86_64 --save
+
+   
 
 # Enable fastest mirror
 sudo dnf config-manager --setopt=fastestmirror=true --save
